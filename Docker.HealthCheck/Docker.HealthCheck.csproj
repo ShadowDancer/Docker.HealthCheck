@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <Version>1.0.0</Version>
+
+	  <TargetFrameworks>net8.0</TargetFrameworks>
+	  <ImplicitUsing>disable</ImplicitUsing>
+	  <Nullable>enable</Nullable>
+
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+      <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	  <Authors>Shadow_Dancer</Authors>
+	  <Description>.NET tool that can serve as a curl health check replacement in Docker environments using chiseled images</Description>
+	  <PackageTags>docker;docker-compose;healthcheck;healthchecks</PackageTags>
+	  <RepositoryUrl>https://github.com/ShadowDancer/Docker.HealthCheck</RepositoryUrl>
+      
+	  <OutputType>Exe</OutputType>
+	  <PackAsTool>true</PackAsTool>
+	  <ToolCommandName>Docker.HealthCheck</ToolCommandName>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+</Project>

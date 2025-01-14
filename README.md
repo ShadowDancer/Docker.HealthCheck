@@ -19,3 +19,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy-chiseled AS runtime
 COPY --from=build /root/.dotnet/tools/ /tools/
 HEALTHCHECK CMD ["/tools/Docker.HealthCheck", "http://localhost:8080/healthz/ready"]
 ```
+
+## How to publish
+
+```
+dotnet pack
+```
